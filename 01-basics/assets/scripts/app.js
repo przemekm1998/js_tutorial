@@ -2,9 +2,8 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 let logEntries = [];
 
-function getUserNumInput() {
-    return parseInt(userInput.value)
-}
+const getUserNumInput = () =>
+    parseInt(userInput.value);
 
 function calcResult(operator) {
     const enteredNumber = getUserNumInput();
@@ -57,29 +56,7 @@ function createLogEntry(operator, resultBefore, calcNum) {
     return logEntries
 }
 
-/*
- * Add user input and current result
- */
-function add() {
-    calcResult('+');
-}
-
-/**
- * Subtract user input from current result
- */
-function subtract() {
-    calcResult('-');
-}
-
-function multiply() {
-    calcResult('*');
-}
-
-function divide() {
-    calcResult('/');
-}
-
-addBtn.addEventListener('click', add);
-subtractBtn.addEventListener('click', subtract);
-multiplyBtn.addEventListener('click', multiply);
-divideBtn.addEventListener('click', divide);
+addBtn.addEventListener('click', calcResult.bind(this, '+'));
+subtractBtn.addEventListener('click', calcResult.bind(this, '-'));
+multiplyBtn.addEventListener('click', calcResult.bind(this, '*'));
+divideBtn.addEventListener('click', calcResult.bind(this, '/'));
