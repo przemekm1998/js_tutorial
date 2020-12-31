@@ -6,6 +6,7 @@ const addMovieModalInput = addMovieModal.querySelectorAll('input');
 const confirmAddMovieButton = document.querySelector('.btn--success');
 
 const deleteMovieModal = document.getElementById('delete-modal');
+const cancelDeleteMovieModal = deleteMovieModal.querySelector('.btn--passive');
 
 const moviesList = document.getElementById('movie-list');
 const movies = [];
@@ -44,6 +45,7 @@ const hideAddMovieModal = () => {
 const backdropHandler = () => {
     hideBackdrop();
     hideAddMovieModal();
+    hideDeleteMovieModal();
 };
 
 /**
@@ -147,10 +149,55 @@ const createNewMovieListElement = (movie) => {
     </div>
   `;
 
+    newListElement.addEventListener('click', showDeleteMovieModal.bind(null, movie.title));
+
     return newListElement;
+};
+
+/**
+ * Show deleting movie popup
+ */
+const showDeleteMovieModal = (title) => {
+    showBackdrop();
+    deleteMovieModal.classList.add('visible');
+
+    const confirmDeleteMovieButton = deleteMovieModal.querySelector('.btn--danger');
+
+    confirmDeleteMovieButton.addEventListener('click', deleteMovieHandler.bind(null, title));
+};
+
+const deleteMovieHandler = (title) => {
+    const movieId = deleteMovie(title);
+    const moviesElements = moviesList.querySelectorAll('li');
+
+    const movieToBeDeleted = moviesElements[movieId];
+    movieToBeDeleted.parentNode.removeChild(movieToBeDeleted);
+
+    hideDeleteMovieModal();
+}
+
+const deleteMovie = (title) => {
+    for (const movie of movies) {
+        if (movie.title === title) {
+            const movieId = movies.indexOf(movie);
+            movies.splice(movieId, 1);
+
+            return movieId;
+        }
+    }
+}
+
+/**
+ * Hide deleting movie popup
+ */
+const hideDeleteMovieModal = () => {
+    hideBackdrop();
+    deleteMovieModal.classList.remove('visible');
 };
 
 startAddMovieButton.addEventListener('click', showAddMovieModal);
 cancelAddMovieButton.addEventListener('click', hideAddMovieModal);
 confirmAddMovieButton.addEventListener('click', confirmAddMovie);
 backdrop.addEventListener('click', backdropHandler);
+
+cancelDeleteMovieModal.addEventListener('click', hideDeleteMovieModal);
