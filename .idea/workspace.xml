@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ccf0d36-19fb-4a12-be0d-2aeaf349cfa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/04-dom/assets/scripts/my_solution.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-dom/assets/scripts/my_solution.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-dom/assets/scripts/my_solution.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="04: Add movies" />
+        <option name="rewordedMessage" value="04: Add movies" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="075b7990f36b493b8d27f6634e0e95289e8542e2" />
   </component>
   <component name="ProjectId" id="1mHmxuferHA5dZSZnaacegyKDhQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,7 +65,7 @@
       <workItem from="1609228268998" duration="792000" />
       <workItem from="1609229890228" duration="15562000" />
       <workItem from="1609317467893" duration="4534000" />
-      <workItem from="1609401321304" duration="798000" />
+      <workItem from="1609401321304" duration="4878000" />
     </task>
     <servers />
   </component>
@@ -74,6 +83,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="04: Add movies" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
