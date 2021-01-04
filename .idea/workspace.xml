@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ccf0d36-19fb-4a12-be0d-2aeaf349cfa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/05-arrays/arrays.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-arrays/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-arrays/maps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-arrays/sets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
