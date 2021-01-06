@@ -31,6 +31,14 @@
     <option name="currentCommit" value="1" />
     <option name="onto" value="075b7990f36b493b8d27f6634e0e95289e8542e2" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1mHmxuferHA5dZSZnaacegyKDhQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -70,6 +78,17 @@
       <workItem from="1609317467893" duration="4534000" />
       <workItem from="1609401321304" duration="7382000" />
       <workItem from="1609751804680" duration="5717000" />
+      <workItem from="1609835249629" duration="292000" />
+      <workItem from="1609837678024" duration="3000" />
+      <workItem from="1609837904684" duration="17000" />
+      <workItem from="1609838234167" duration="2000" />
+      <workItem from="1609838331581" duration="33000" />
+      <workItem from="1609838403340" duration="2000" />
+      <workItem from="1609839557186" duration="24000" />
+      <workItem from="1609839862248" duration="4000" />
+      <workItem from="1609840086273" duration="150000" />
+      <workItem from="1609931185261" duration="3947000" />
+      <workItem from="1609947226365" duration="2709000" />
     </task>
     <servers />
   </component>
